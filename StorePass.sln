@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorePass.DataServer", "StorePass.DataServer\StorePass.DataServer.csproj", "{5C3269A4-F1C1-4101-B932-55591E0E570C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataServer", "DataServer", "{48DB08BE-50EA-4A5C-B387-AF24C2F6F24C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{124AA810-CA31-45DE-8496-6862940806C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordController", "PasswordController\PasswordController.csproj", "{E682477A-F479-4B91-AE01-F3B6C4F4D17D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{29879E33-68FF-486E-9C53-FEDB02C45B76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C3269A4-F1C1-4101-B932-55591E0E570C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C3269A4-F1C1-4101-B932-55591E0E570C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C3269A4-F1C1-4101-B932-55591E0E570C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C3269A4-F1C1-4101-B932-55591E0E570C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E682477A-F479-4B91-AE01-F3B6C4F4D17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E682477A-F479-4B91-AE01-F3B6C4F4D17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E682477A-F479-4B91-AE01-F3B6C4F4D17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E682477A-F479-4B91-AE01-F3B6C4F4D17D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29879E33-68FF-486E-9C53-FEDB02C45B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29879E33-68FF-486E-9C53-FEDB02C45B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29879E33-68FF-486E-9C53-FEDB02C45B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29879E33-68FF-486E-9C53-FEDB02C45B76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{124AA810-CA31-45DE-8496-6862940806C8} = {48DB08BE-50EA-4A5C-B387-AF24C2F6F24C}
+		{E682477A-F479-4B91-AE01-F3B6C4F4D17D} = {124AA810-CA31-45DE-8496-6862940806C8}
+		{29879E33-68FF-486E-9C53-FEDB02C45B76} = {48DB08BE-50EA-4A5C-B387-AF24C2F6F24C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1D1E17-512A-42FB-8710-7B68DC532F4E}

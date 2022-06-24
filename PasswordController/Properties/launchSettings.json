@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "StorePass.DataServer": {
+    "PasswordController": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
