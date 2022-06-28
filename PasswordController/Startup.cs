@@ -18,9 +18,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("generate", (int length) =>
+app.MapGet("generate", (int length, bool specialChars) =>
 {
-    return PasswordGenerator.Generate(length);
+    return PasswordGenerator.Generate(length, specialChars);
 })
 .WithName("GeneratePassword");
 
