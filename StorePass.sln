@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordController", "Passw
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{29879E33-68FF-486E-9C53-FEDB02C45B76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Models\Contracts.csproj", "{568D9301-D319-4029-8B40-B2442D65E8D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{29879E33-68FF-486E-9C53-FEDB02C45B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29879E33-68FF-486E-9C53-FEDB02C45B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29879E33-68FF-486E-9C53-FEDB02C45B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{568D9301-D319-4029-8B40-B2442D65E8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{568D9301-D319-4029-8B40-B2442D65E8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{568D9301-D319-4029-8B40-B2442D65E8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{568D9301-D319-4029-8B40-B2442D65E8D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,6 +39,7 @@ Global
 		{124AA810-CA31-45DE-8496-6862940806C8} = {48DB08BE-50EA-4A5C-B387-AF24C2F6F24C}
 		{E682477A-F479-4B91-AE01-F3B6C4F4D17D} = {124AA810-CA31-45DE-8496-6862940806C8}
 		{29879E33-68FF-486E-9C53-FEDB02C45B76} = {48DB08BE-50EA-4A5C-B387-AF24C2F6F24C}
+		{568D9301-D319-4029-8B40-B2442D65E8D7} = {48DB08BE-50EA-4A5C-B387-AF24C2F6F24C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1D1E17-512A-42FB-8710-7B68DC532F4E}

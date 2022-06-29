@@ -1,5 +1,6 @@
-﻿using System.Security.Cryptography;
-namespace StorePass.DataServer.Services;
+﻿using Contracts.Exceptions;
+using System.Security.Cryptography;
+namespace Services.Concrete;
 
 public static class PasswordGenerator
 {
@@ -8,11 +9,14 @@ public static class PasswordGenerator
         "abcdefghijklmnopqrstuvwxyz" +
         "0123456789";
 
-    const string specialCharacters = 
+    const string specialCharacters =
         @"`~!@#$%^&*()-_=+[]{}\|;:'"",.<>/? ";
 
     public static string Generate(int length, bool specialChars)
     {
+        if (length == default)
+            throw new BadRequestException($"Length of password cannot be {length}");
+
         var adjustedLength = length;
 
         // If the password will contain special characters
